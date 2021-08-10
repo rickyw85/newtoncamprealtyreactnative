@@ -1,36 +1,111 @@
 import React, { Component } from 'react';
-import Directory from './DirectoryComponent';
-import { HOUSES } from '../shared/houses';
-import RealEstateInfo from './RealEstateInfoComponent';
-import { View } from 'react-native';
+import Home from './HomeComponent'
+import Listings from './ListingsComponent';
+import HouseInfo from './HouseInfoComponent';
+import About from "./AboutComponent";
+import Contact from "./ContactComponent";
+import Constants from 'expo-constants';
+import { View, Platform } from 'react-native';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
+import { createAppContainer } from 'react-navigation';
+
+const ListingsNavigator = createStackNavigator(
+    {
+        Listings: { screen: Listings },
+        HouseInfo: { screen: HouseInfo }
+    }, 
+    {
+        initialRouteName: 'Listings',
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+
+const HomeNavigator = createStackNavigator(
+    {
+        Home: { screen: Home }
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+
+const AboutNavigator = createStackNavigator(
+    {
+        About: { screen: About }
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+
+const ContactNavigator = createStackNavigator(
+    {
+        Contact: { screen: Contact }
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+
+const MainNavigator = createDrawerNavigator(
+    {
+        Home: { screen: HomeNavigator },
+        Listings: { screen: ListingsNavigator },
+        About: { screen: AboutNavigator },
+        Contact: { screen: ContactNavigator }
+    },
+    {
+        drawerBackgroundColor: '#CEC8FF'
+    }
+);
+
+
+const AppNavigator = createAppContainer(MainNavigator);
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            houses: HOUSES,
-            selectedHouse: null
-        };
-    }
-
-    onHouseSelect(houseId) {
-        this.setState({selectedHouse: houseId});
-    }
-
     render() {
         return (
-            <View style={{flex: 1}}>
-                <Directory
-                    houses={this.state.houses}
-                    onPress={houseId => this.onHouseSelect(houseId)}
-                />
-                <RealEstateInfo
-                    house={this.state.houses.filter(
-                        house => house.id === this.state.selectedHouse)[0]}
-                />
+            <View style={{
+                    flex: 1,
+                    paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
+            }}>
+                <AppNavigator />
             </View>
         );
-    }        
+    }
 }
 
 export default Main;
