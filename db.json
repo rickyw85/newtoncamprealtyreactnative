@@ -1,0 +1,147 @@
+{
+  "houses": [
+    {
+      "id": 0,
+      "name": "St. Augustine Estates",
+      "image": "images/house1.jpg",
+      "featured": true,
+      "description": "The St. Augustine Estate just recently entered the buyers market. Located at 123 Eve St. Sunny Oaks, Ca 12345. The Estate will not be available long. Place a bid while you still can!"
+  },
+  {
+      "id": 1,
+      "name":"700 Cherry St.",
+      "image": "images/house2.jpg",
+      "featured": false,
+      "description": "700 Cherry St. Peace Valley, Ca 98765 is located in one of the best school districts in the state of California. This is a prize house for new couples and families looking for a prosperous future."
+  },
+  {
+      "id": 2,
+      "name":"Blanco Casa Villa",
+      "image": "images/house3.jpg",
+      "featured": false,
+      "description": "From renowned architect, Alfred Butterstotch the Third, Blanco Casa Villa. Located at 77 Seventh St. Blanco Verde, Ca 56789. All showings must be booked 2 weeks in advance. Only serious bids will be considered."
+  },
+  {
+      "id": 3,
+      "name":"7 Terrace Ave.",
+      "image": "images/house4.jpg",
+      "featured": false,
+      "description": "Hidden in the quiet forests of 7777 Coniferous Rd. Pine Valley, Ca 54321. The remote mountainsides covered with luscious greens is sure to calm every spirit."
+  }
+  ],
+  "reviews": [
+    {
+      "id": 0,
+      "houseId": 0,
+      "rating": 4,
+      "text": "Beautiful views and spacious interiors.",
+      "author": "Bob Bobbington"
+    },
+    {
+      "id": 1,
+      "houseId": 0,
+      "rating": 5,
+      "text": "This is my dream house!!!",
+      "author": "Jenny Jennington"
+    },
+    {
+      "id": 2,
+      "houseId": 0,
+      "rating": 4,
+      "text": "I would buy this house just for the bathroom.",
+      "author": "Kerry Kerrington"
+    },
+    {
+      "id": 3,
+      "houseId": 1,
+      "rating": 4,
+      "text": "I would love to live in this neighborhood. The house is magnificent.",
+      "author": "Nicky Nickington"
+    },
+    {
+      "id": 4,
+      "houseId": 1,
+      "rating": 5,
+      "text": "This house has everything a family could dream of.",
+      "author": "Linda Livingston"
+    },
+    {
+      "id": 5,
+      "houseId": 1,
+      "rating": 2,
+      "text": "I smelled a weird smell.",
+      "author": "Matthew Mathison"
+    },
+    {
+      "id": 6,
+      "houseId": 2,
+      "rating": 5,
+      "text": "Why can't I be richer! I would sell my soul for this place.",
+      "author": "Barry Barrington"
+    },
+    {
+      "id": 7,
+      "houseId": 2,
+      "rating": 5,
+      "text": "This place is insane!",
+      "author": "Tilda Tilly"
+    },
+    {
+      "id": 8,
+      "houseId": 2,
+      "rating": 5,
+      "text": "It truly is beautiful. It is also a lot to maintain.",
+      "author": "Fanny Fannington"
+    },
+    {
+      "id": 9,
+      "houseId": 3,
+      "rating": 5,
+      "text": "I really liked this place.",
+      "author": "Marcus Mark"
+    },
+    {
+      "id": 10,
+      "houseId": 3,
+      "rating": 5,
+      "text": "This is a very special place. I truly hope a nice family moves in.",
+      "author": "Lillian Lilliams"
+    },
+    {
+      "id": 11,
+      "houseId": 3,
+      "rating": 4,
+      "text": "Great light. Great Ventilation. Huge yard!",
+      "author": "Gary Garley"
+    }
+  ],
+  "vendors": [
+    {
+      "id": 0,
+      "image": "images/forsale.jpg",
+      "featured": true,
+      "description": "Contact us about becoming one of our local business vendors. We look forward to working with you in the future."
+  }
+  ],
+  "newton": [
+    {
+      "id": 0,
+      "name": "Newton Camp",
+      "image": "images/newton1.jpg",
+      "featured": true,
+      "description": "People know what they want five seconds after they see a place if they really want it. Get up, walk up to the listing, and think about what they see in those five seconds."
+  }
+  ],
+  "feedback": [
+    {
+      "id": 0,
+      "firstname": "Test",
+      "lastname": "Test",
+      "phoneNum": "12345",
+      "email": "test@test.com",
+      "agree": true,
+      "contactType": "Email",
+      "feedback": "test"
+    }
+  ]
+}
