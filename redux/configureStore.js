@@ -5,17 +5,29 @@ import { houses } from './houses';
 import { reviews } from './reviews';
 import { newton } from './newton';
 import { vendors } from './vendors';
+import { favorites } from './favorites';
+import { persistStore, persistCombineReducers } from 'redux-persist';
+import storage from 'redux-persist/es/storage';
+
+const config = {
+    key: 'root',
+    storage,
+    debug: true
+}
 
 export const ConfigureStore = () => {
     const store = createStore(
-        combineReducers({
+        persistCombineReducers(config, {
             houses,
             reviews,
             vendors,
-            newton
+            newton,
+            favorites
         }),
         applyMiddleware(thunk, logger)
     );
 
-    return store;
-}
+    const persistor = persistStore(store);
+
+    return { persistor, store };
+};

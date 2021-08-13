@@ -26,9 +26,28 @@ export const reviewsFailed = errMess => ({
     payload: errMess
 });
 
-export const addReviews = reviews => ({
+export const addReviews = (reviews) => ({
     type: ActionTypes.ADD_REVIEWS,
     payload: reviews
+});
+
+export const postReview = (houseId, rating, author, text) => dispatch => {
+    const newReview = {
+        houseId,
+        rating,
+        author,
+        text
+    };
+    newReview.date = new Date().toISOString();
+
+    setTimeout(() => {
+        dispatch(addReview(newReview));        
+    }, 2000);
+}
+
+export const addReview = review => ({
+    type: ActionTypes.ADD_REVIEW,
+    payload: review
 });
 
 export const fetchHouses = () => dispatch => {
@@ -48,7 +67,8 @@ export const fetchHouses = () => dispatch => {
             error => {
                 const errMess = new Error(error.message);
                 throw errMess;
-            })
+            }
+        )
         .then(response => response.json())
         .then(houses => dispatch(addHouses(houses)))
         .catch(error => dispatch(housesFailed(error.message)));
@@ -85,7 +105,8 @@ export const fetchNewton = () => dispatch => {
             error => {
                 const errMess = new Error(error.message);
                 throw errMess;
-            })
+            }
+        )
         .then(response => response.json())
         .then(newton => dispatch(addNewton(newton)))
         .catch(error => dispatch(newtonFailed(error.message)));
@@ -122,9 +143,10 @@ export const fetchVendors = () => dispatch => {
             error => {
                 const errMess = new Error(error.message);
                 throw errMess;
-            })
+            }
+        )
         .then(response => response.json())
-        .then(partners => dispatch(addVendors(vendors)))
+        .then(vendors => dispatch(addVendors(vendors)))
         .catch(error => dispatch(vendorsFailed(error.message)));
 };
 
@@ -141,3 +163,19 @@ export const addVendors = vendors => ({
     type: ActionTypes.ADD_VENDORS,
     payload: vendors
 });
+
+export const postFavorite = houseId => dispatch => {
+    setTimeout(() => {
+        dispatch(addFavorite(houseId));
+    }, 2000);
+};
+
+export const addFavorite = houseId => ({
+    type: ActionTypes.ADD_FAVORITE,
+    payload: houseId
+});
+
+export const deleteFavorite = houseId => ({
+    type: ActionTypes.DELETE_FAVORITE,
+    payload: houseId
+}); 
