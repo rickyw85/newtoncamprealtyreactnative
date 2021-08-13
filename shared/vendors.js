@@ -1,9 +1,8 @@
 export const VENDORS = [
     {
         id: 0,
-        name: "Doing Business",
-        image: "/assets/images/hands.jpg",
+        image: "/assets/images/forsale.jpg",
         featured: true,
-        description: "Join Git Out Expeditions to explore new horizons with a group of other adventurers!"
+        description: "Contact us about becoming one of our local business vendors. We look forward to working with you in the future."
     }
-]        
+]

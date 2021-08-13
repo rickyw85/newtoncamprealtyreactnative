@@ -1,30 +1,34 @@
 export const HOUSES = [
     {
         id: 0,
-        name: "St. Augustine Estates",
+        name: "React Lake Campground",
         image: "/assets/images/house1.jpg",
-        featured: true,
-        description: "The St. Augustine Estate just recently entered the buyers market. Located at 123 Eve St. Sunny Oaks, Ca 12345. The Estate will not be available long. Place a bid while you still can!"
+        elevation: 1233,
+        featured: false,
+        description: "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers."
     },
     {
         id: 1,
-        name:"700 Cherry St.",
+        name:"Chrome River Campground ",
         image: "/assets/images/house2.jpg",
+        elevation: 877,
         featured: false,
-        description: "700 Cherry St. Peace Valley, Ca 98765 is located in one of the best school districts in the state of California. This is a prize house for new couples and families looking for a prosperous future."
+        description: "Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River."
     },
     {
         id: 2,
-        name:"Blanco Casa Villa",
+        name:"Breadcrumb Trail Campground",
         image: "/assets/images/house3.jpg",
+        elevation: 2901,
         featured: false,
-        description: "From renowned architect, Alfred Butterstotch the Third, Blanco Casa Villa. Located at 77 Seventh St. Blanco Verde, Ca 56789. All showings must be booked 2 weeks in advance. Only serious bids will be considered."
+        description: "Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground."
     },
     {
         id: 3,
-        name:"7 Terrace Ave.",
+        name:"Redux Woods Campground",
         image: "/assets/images/house4.jpg",
-        featured: false,
-        description: "Hidden in the quiet forests of 7777 Coniferous Rd. Pine Valley, Ca 54321. The remote mountainsides covered with luscious greens is sure to calm every spirit."
+        elevation: 42,
+        featured: true,
+        description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
     }
 ];

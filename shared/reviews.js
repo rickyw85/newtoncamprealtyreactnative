@@ -2,162 +2,86 @@ export const REVIEWS =
 [
     {
         id: 0,
-        campsiteId: 0,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
-    },
-    {
+        houseId: 0,
+        rating: 4,
+        text: "Beautiful views and spacious interiors.",
+        author: "Bob Bobbington"
+      },
+      {
         id: 1,
-        campsiteId: 0,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
-    },
-    {
+        houseId: 0,
+        rating: 5,
+        text: "This is my dream house!!!",
+        author: "Jenny Jennington"
+      },
+      {
         id: 2,
-        campsiteId: 0,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
-    },
-    {
+        houseId: 0,
+        rating: 4,
+        text: "I would buy this house just for the bathroom.",
+        author: "Kerry Kerrington"
+      },
+      {
         id: 3,
-        campsiteId: 0,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
-    },
-    {
+        houseId: 1,
+        rating: 4,
+        text: "I would love to live in this neighborhood. The house is magnificent.",
+        author: "Nicky Nickington"
+      },
+      {
         id: 4,
-        campsiteId: 0,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
-    },
-    {
+        houseId: 1,
+        rating: 5,
+        text: "This house has everything a family could dream of.",
+        author: "Linda Livingston"
+      },
+      {
         id: 5,
-        campsiteId: 1,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
-    },
-    {
+        houseId: 1,
+        rating: 2,
+        text: "I smelled a weird smell.",
+        author: "Matthew Mathison"
+      },
+      {
         id: 6,
-        campsiteId: 1,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
-    },
-    {
+        houseId: 2,
+        rating: 5,
+        text: "Why can't I be richer! I would sell my soul for this place.",
+        author: "Barry Barrington"
+      },
+      {
         id: 7,
-        campsiteId: 1,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
-    },
-    {
+        houseId: 2,
+        rating: 5,
+        text: "This place is insane!",
+        author: "Tilda Tilly"
+      },
+      {
         id: 8,
-        campsiteId: 1,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
-    },
-    {
+        houseId: 2,
+        rating: 5,
+        text: "It truly is beautiful. It is also a lot to maintain.",
+        author: "Fanny Fannington"
+      },
+      {
         id: 9,
-        campsiteId: 1,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
-    },
-    {
+        houseId: 3,
+        rating: 5,
+        text: "I really liked this place.",
+        author: "Marcus Mark"
+      },
+      {
         id: 10,
-        campsiteId: 2,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
-    },
-    {
+        houseId: 3,
+        rating: 5,
+        text: "This is a very special place. I truly hope a nice family moves in.",
+        author: "Lillian Lilliams"
+      },
+      {
         id: 11,
-        campsiteId: 2,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
-    },
-    {
-        id: 12,
-        campsiteId: 2,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
-    },
-    {
-        id: 13,
-        campsiteId: 2,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
-    },
-    {
-        id: 14,
-        campsiteId: 2,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
-    },
-    {
-        id: 15,
-        campsiteId: 3,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
-    },
-    {
-        id: 16,
-        campsiteId: 3,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
-    },
-    {
-        id: 17,
-        campsiteId: 3,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
-    },
-    {
-        id: 18,
-        campsiteId: 3,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
-    },
-    {
-        id: 19,
-        campsiteId: 3,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
-    }
+        houseId: 3,
+        rating: 4,
+        text: "Great light. Great Ventilation. Huge yard!",
+        author: "Gary Garley"
+      }
 ]
